@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dekenet Al Nes - Eco-Friendly Convenience Shop</title>
+
+    <link rel="stylesheet" href="home_styles.css" />
+
+    <!-- Fonts: Poppins for UI text, Candal for main titles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Candal&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar">
+        <div class="container-fluid">
+            
+            <div class="nav-brand">
+                <img src="../images/logo.png" alt="Dekenet Al Nes" class="logo-img" />
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li>
+                    <a href="#home" class="active">
+                        Home
+                        <span class="active-dot"></span>
+                    </a>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li>
+                    <a href="#community" class="dropdown-link">
+                        Community 
+                        <svg class="nav-icon chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 1L5 5L9 1"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" placeholder="Search here" />
+                </div>
+                
+                <div class="auth-links">
+                    <a href="#" class="auth-link">
+                        Log in 
+                        <svg class="auth-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 12H3" /> <path d="M11 8l4 4-4 4" /> <path d="M17 6a6 6 0 0 1 0 12" /> </svg>
+                    </a>
+                    
+                    <span class="auth-separator">/</span>
+                    
+                    <a href="#" class="auth-link">
+                        Sign up 
+                        <svg class="auth-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 6a6 6 0 0 0 0 12" /> <path d="M9 12h12" /> <path d="M13 16l-4-4 4-4" /> </svg>
+                    </a>
+                </div>
+            </div>
+
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+            <div class="hero-ripple-left"></div>
+            <div class="hero-ripple-right"></div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Dekenet Al Nes</h1>
+                        <p class="hero-description">
+                            Dekenet L Nes is an eco-friendly convenience shop that offers daily essentials with a
+                            focus on sustainability. It provides refillable products, low-waste alternatives, and
+                            locally sourced goods, making it easy for customers to shop consciously and reduce
+                            their environmental impact.
+                        </p>
+                        <button class="btn btn-yellow">Explore More</button>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-container">
+                            <div class="bg-circle"></div>
+                            <div class="bg-ring-offset"></div>
+                            <div class="bg-yellow-dot"></div>
+
+                            <img
+                                src="../images/person1.png"
+                                alt="Person with sustainable products"
+                                class="hero-person-image"
+                            />
+
+                            <div class="stat-card stat-card-1">
+                                <div class="stat-icon icon-yellow-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Beneficiaries</div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card stat-card-2">
+                                <div class="stat-progress-circle">
+                                    <svg width="60" height="60" viewBox="0 0 60 60">
+                                        <circle cx="30" cy="30" r="24" fill="none" stroke="#f0f0f0" stroke-width="5" />
+                                        <circle cx="30" cy="30" r="24" fill="none" stroke="#E1B23E" stroke-width="5" 
+                                                stroke-dasharray="150" stroke-dashoffset="35" transform="rotate(-90 30 30)" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="stat-content centered">
+                                    <div class="stat-number">2K+</div>
+                                    <div class="stat-label">Plastics Saved</div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card stat-card-3">
+                                <div class="stat-icon icon-yellow-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 3h20"></path>
+                                        <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
+                                        <path d="M9 21v-6"></path>
+                                        <path d="M15 21v-6"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-label-small">initiatives</div>
+                                    <div class="stat-number">22+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="about" class="our-story">
+    <div class="container">
+        <h2 class="section-title section-title-white">Our Story</h2>
+        
+        <div class="story-card">
+            <div class="story-content">
+                <p class="story-text">
+                    Dekenet Al Nes is a solidarity initiative founded in Lebanon to support 
+                    local communities during difficult times. We aim to empower small 
+                    producers, artisans, and farmers by helping them sell their eco-friendly 
+                    and handmade products. Since 2019, our mission has been to promote 
+                    sustainable living and encourage conscious consumption one local 
+                    product at a time. Through our growing network of partners and 
+                    beneficiaries, we continue to create positive social and environmental 
+                    impact across Lebanon.
+                </p>
+                <button class="btn btn-yellow">Explore More</button>
+            </div>
+            
+            <div class="story-image-slider">
+                <img src="../images/story-1.png" alt="Our Story 1" class="slide active" 
+                     onerror="this.src='https://placehold.co/600x400/296C86/white?text=Story+1'" />
+                <img src="../images/story-2.png" alt="Our Story 2" class="slide" 
+                     onerror="this.src='https://placehold.co/600x400/E1B23E/white?text=Story+2'" />
+                <img src="../images/story-3.png" alt="Our Story 3" class="slide" 
+                     onerror="this.src='https://placehold.co/600x400/296C86/white?text=Story+3'" />
+                <img src="../images/story-4.png" alt="Our Story 4" class="slide" 
+                     onerror="this.src='https://placehold.co/600x400/E1B23E/white?text=Story+4'" />
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="mission" class="our-mission">
+    <div class="container">
+        <h2 class="section-title">Our Mission</h2>
+        
+        <div class="mission-pillars">
+            <div class="mission-card">
+                <img src="../images/mission-icon-1.png" alt="Icon 1 - Eco-Friendly Shopping" class="mission-icon" />
+                <h3 class="mission-subtitle">Eco-Friendly Shopping</h3>
+                <p class="mission-text">
+                    Our mission is to offer low-waste, eco-friendly products that reduce plastic from everyday life and make sustainable choices simple.
+                </p>
+            </div>
+            
+            <div class="mission-card">
+                <img src="../images/mission-icon-2.png" alt="Icon 2 - Refill & Reuse System" class="mission-icon" />
+                <h3 class="mission-subtitle">Refill & Reuse System</h3>
+                <p class="mission-text">
+                    Our mission is to cut single-use plastic by promoting refill and reuse, a proven approach that can reduce nearly half of ocean-bound plastic waste.
+                </p>
+            </div>
+
+            <div class="mission-card">
+                <img src="../images/mission-icon-3.png" alt="Icon 3 - Community Impact" class="mission-icon" />
+                <h3 class="mission-subtitle">Community Impact</h3>
+                <p class="mission-text">
+                    Our mission is to empower our community to live sustainably by supporting local makers and encouraging collective action against plastic pollution.
+                </p>
+            </div>
+        </div>
+
+        <div class="mission-actions">
+            <button class="btn btn-primary-darker btn-thinner">Read More</button>
+        </div>
+    </div>
+</section>
+        <!-- Community Section -->
+<section id="community" class="community-section">
+    <div class="container">
+        <h2 class="section-title">Our Community</h2>
+        
+        <div class="community-grid">
+            <div class="comm-card">
+                <div class="comm-img-wrapper">
+                    <img src="../images/community1.png" alt="Local Grower" class="comm-img" 
+                         onerror="this.src='https://placehold.co/400x400/cccccc/296C86?text=Grower'" />
+                </div>
+                <h3 class="comm-title">Supporting Local<br>Growers</h3>
+                <p class="comm-desc">
+                    By buying fresh, local produce, our community empowers small farmers and cuts down on transport emissions.
+                </p>
+            </div>
+
+            <div class="comm-card">
+                <div class="comm-img-wrapper">
+                    <img src="../images/community2.png" alt="Conscious Shopping" class="comm-img" 
+                         onerror="this.src='https://placehold.co/400x400/cccccc/296C86?text=Culture'" />
+                </div>
+                <h3 class="comm-title">Building a Conscious<br>Shopping Culture</h3>
+                <p class="comm-desc">
+                    Every refill, every jar, every conversation in our store helps normalize sustainable habits every day you shop.
+                </p>
+            </div>
+
+            <div class="comm-card">
+                <div class="comm-img-wrapper">
+                    <img src="../images/community3.png" alt="Growing Together" class="comm-img" 
+                         onerror="this.src='https://placehold.co/400x400/cccccc/296C86?text=Together'" />
+                </div>
+                <h3 class="comm-title">Growing Together,<br>Sustainably</h3>
+                <p class="comm-desc">
+                    Farmers and shoppers connect directly, creating a transparent, trust-based, and earth-friendly food system.
+                </p>
+            </div>
+        </div>
+
+        <div class="comm-action">
+            <button class="btn btn-comm">Read More</button>
+        </div>
+    </div>
+</section>
+
+        <!-- Subscription Box Section -->
+        <section id="subscription" class="subscription-box">
+    <div class="container">
+        <div class="subscription-content">
+            
+            <div class="subscription-image-wrapper">
+                
+                <div class="subscription-box-bg-circle"></div>
+                <div class="subscription-ring-offset"></div>
+                <div class="subscription-ripple"></div>
+
+                <div class="subscription-floating-card">
+                    <div class="sub-card-icon">
+                        <span class="sub-icon-glyph">▤</span> 
+                    </div>
+                    <div class="sub-card-text">
+                        <div class="sub-card-title">Subscription</div>
+                        <div class="sub-card-subtitle">Box</div>
+                    </div>
+                </div>
+
+                <img src="../images/crate.png" alt="The Al Nes Monthly Care Crate" class="subscription-crate-image" />
+            </div>
+
+            <div class="subscription-text-content">
+                <h2 class="subscription-title">Subscription Box</h2>
+                <p class="subscription-description">
+                    Join Dekenet al Nes and enjoy:
+                </p>
+                <ul class="benefits-list">
+                    <li>
+                        Monthly container pickup & refill – we collect, refill, and deliver your essentials right to your door.
+                    </li>
+                    <li>
+                        Member-only discounts on staple goods like olive oil, flour, bulgur, and detergents.
+                    </li>
+                    <li>
+                        Priority delivery for faster, hassle-free service.
+                    </li>
+                    <li>
+                        Early access to seasonal Lebanese products from local farmers and cooperatives.
+                    </li>
+                </ul>
+                <button class="btn btn-yellow btn-subscription">Subscribe yours</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Best Sellers Section -->
+        <section id="shop" class="best-sellers">
+    <div class="seller-ripple-top-right"></div>
+    <div class="seller-ripple-bottom-left"></div>
+
+    <div class="container">
+        <h2 class="section-title">Best Sellers</h2>
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="../images/seller1.png" alt="Natural Olive Oil Soap" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3 class="product-name">Natural Olive Oil Soap</h3>
+                        <div class="product-price">7.99$</div>
+                    </div>
+                    <div class="product-rating">
+                        <span class="star-icon">★</span>
+                        <span class="p-reviews">5.0 ( 128 Reviews)</span>
+                    </div>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="../images/seller2.png" alt="Local Honey Jar" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3 class="product-name">Local Honey Jar</h3>
+                        <div class="product-price">4.99$</div>
+                    </div>
+                    <div class="product-rating">
+                        <span class="star-icon">★</span>
+                        <span class="p-reviews">4.0 ( 95 Reviews)</span>
+                    </div>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="../images/seller3.png" alt="Traditional Theme Mix" class="product-img">
+                </div>
+                <div class="product-info">
+                    <div class="product-header">
+                        <h3 class="product-name">Traditional Theme Mix</h3>
+                        <div class="product-price">3.99$</div>
+                    </div>
+                    <div class="product-rating">
+                        <span class="star-icon">★</span>
+                        <span class="p-reviews">4.0 ( 67 Reviews)</span>
+                    </div>
+                    <button class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="shop-cta">
+            <button class="btn btn-shop-all">Shop All</button>
+        </div>
+    </div>
+</section>
+
+        <section id="reviews" class="reviews">
+    <div class="reviews-ripple-top-left"></div>
+    <div class="reviews-ripple-bottom-right"></div>
+
+    <div class="container">
+        <div class="reviews-white-box">
+            <h2 class="section-title">Reviews</h2>
+            <p class="reviews-intro">
+                Dekenet Al Nes is a solidarity initiative launched in Lebanon <br>
+                in response to the economic
+            </p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-mark">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H20V24C20 35.0457 11.0457 44 0 44V28C6.62742 28 12 22.6274 12 16H0V0Z" fill="#296C86"/>
+        <path d="M28 0H48V24C48 35.0457 39.0457 44 28 44V28C34.6274 28 40 22.6274 40 16H28V0Z" fill="#296C86"/>
+    </svg>
+</div>
+                    
+                    <div class="user-profile">
+                        <img src="../images/review-1.png" alt="Sara Ghali" class="user-img" 
+                             onerror="this.src='https://placehold.co/100x100/teal/white?text=SG'" />
+                        <div class="user-info">
+                            <h4 class="user-name">Sara Ghali</h4>
+                            <div class="user-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <h5 class="review-title">Wooooowwww !</h5>
+                    <p class="review-text">
+                        I love how Dekenet Al Nes supports local farmers! Everything is fresh, affordable, and full of authentic Lebanese flavor.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H20V24C20 35.0457 11.0457 44 0 44V28C6.62742 28 12 22.6274 12 16H0V0Z" fill="#296C86"/>
+        <path d="M28 0H48V24C48 35.0457 39.0457 44 28 44V28C34.6274 28 40 22.6274 40 16H28V0Z" fill="#296C86"/>
+    </svg>
+</div>
+                    <div class="user-profile">
+                        <img src="../images/review-2.png" alt="Rania Hoteit" class="user-img" 
+                             onerror="this.src='https://placehold.co/100x100/teal/white?text=RH'" />
+                        <div class="user-info">
+                            <h4 class="user-name">Rania Hoteit</h4>
+                            <div class="user-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <h5 class="review-title">Amazing initiative!</h5>
+                    <p class="review-text">
+                        Finally a store that sells local products at fair prices. Their eco-friendly approach makes me feel proud to shop here.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-mark">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0H20V24C20 35.0457 11.0457 44 0 44V28C6.62742 28 12 22.6274 12 16H0V0Z" fill="#296C86"/>
+        <path d="M28 0H48V24C48 35.0457 39.0457 44 28 44V28C34.6274 28 40 22.6274 40 16H28V0Z" fill="#296C86"/>
+    </svg>
+</div>
+                    <div class="user-profile">
+                        <img src="../images/review-3.png" alt="Ahmad Nasser" class="user-img" 
+                             onerror="this.src='https://placehold.co/100x100/teal/white?text=AN'" />
+                        <div class="user-info">
+                            <h4 class="user-name">Ahmad Nasser</h4>
+                            <div class="user-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <h5 class="review-title">Highly recommended!</h5>
+                    <p class="review-text">
+                        I subscribed to the monthly box and it's perfect! Great variety, good prices, and all Lebanese made items!
+                    </p>
+                </div>
+                <div class="testimonial-card">
+    <div class="quote-mark">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H20V24C20 35.0457 11.0457 44 0 44V28C6.62742 28 12 22.6274 12 16H0V0Z" fill="#296C86"/>
+            <path d="M28 0H48V24C48 35.0457 39.0457 44 28 44V28C34.6274 28 40 22.6274 40 16H28V0Z" fill="#296C86"/>
+        </svg>
+    </div>
+    <div class="user-profile">
+        <img src="../images/review-4.png" alt="Nour Hakim" class="user-img" 
+             onerror="this.src='https://placehold.co/100x100/teal/white?text=NH'" />
+        <div class="user-info">
+            <h4 class="user-name">Nour Hakim</h4>
+            <div class="user-rating">★★★★★</div>
+        </div>
+    </div>
+    <h5 class="review-title">Plastic-free perfection!</h5>
+    <p class="review-text">
+        The packaging is entirely eco-friendly. It feels so good to shop without accumulating waste. Keep it up!
+    </p>
+</div>
+
+
+
+
+<div class="testimonial-card">
+    <div class="quote-mark">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H20V24C20 35.0457 11.0457 44 0 44V28C6.62742 28 12 22.6274 12 16H0V0Z" fill="#296C86"/>
+            <path d="M28 0H48V24C48 35.0457 39.0457 44 28 44V28C34.6274 28 40 22.6274 40 16H28V0Z" fill="#296C86"/>
+        </svg>
+    </div>
+    <div class="user-profile">
+        <img src="../images/review-5.png" alt="Fadi Jabbour" class="user-img" 
+             onerror="this.src='https://placehold.co/100x100/teal/white?text=FJ'" />
+        <div class="user-info">
+            <h4 class="user-name">Shadia Ghali</h4>
+            <div class="user-rating">★★★★★</div>
+        </div>
+    </div>
+    <h5 class="review-title">Top tier quality</h5>
+    <p class="review-text">
+        The local honey and jams are absolutely delicious. Will definitely be ordering my monthly essentials here.
+    </p>
+</div>
+            </div>
+        </div>
+
+        <p class="reviews-conclusion">
+            Experience the taste of Lebanon and support local sustainability with Dekenet Al Nes
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-ripple"></div>
+
+    <div class="container">
+        <div class="footer-content">
+            
+            <div class="footer-col logo-col">
+                <img src="../images/logo.png" alt="Dekenet Al Nes" class="footer-logo-img" />
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Get in Touch</h4>
+                <ul class="contact-list">
+                    <li>
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div class="contact-text">
+                            <span>Lebanon, Mont-Lebanon</span>
+                            <span>Baakline</span>
+                        </div>
+                    </li>
+                    <li>
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span class="contact-text">DekenetAlNes@gmail.com</span>
+                    </li>
+                    <li>
+                        <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span class="contact-text">+961 81 927 835</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col nav-col">
+                <ul class="footer-nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#community">Community</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col social-col">
+                <div class="social-icons">
+                    <a href="#" class="social-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                    <a href="#" class="social-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" class="social-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    </a>
+                </div>
+                <p class="social-text">
+                    Join the fun! Follow us<br>on social media!
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright .DekenetAlNes.lb. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+    <div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        
+        <div class="modal-logo">
+            <img src="../images/logoc.png" alt="Dekenet Al Nes" />
+        </div>
+
+        <div class="modal-tabs">
+    <button type="button" class="tab-btn" id="tabSignUp">SIGN UP</button>
+    <button type="button" class="tab-btn active" id="tabLogIn">LOG IN</button>
+    <div class="tab-indicator"></div>
+</div>
+        <div id="loginForm" class="auth-form active">
+            <div class="input-group">
+                <input type="email" placeholder="Email" required />
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required />
+            </div>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button class="btn btn-auth">Log In</button>
+
+            <p class="auth-footer-text">
+                Don't have an account? <span class="auth-link-text switch-to-signup">Sign Up</span>
+            </p>
+        </div>
+
+        <div id="signupForm" class="auth-form">
+            <div class="input-group">
+                <input type="text" placeholder="First name" required />
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Last name" required />
+            </div>
+            <div class="input-group">
+                <input type="tel" placeholder="Phone number" required />
+            </div>
+
+            <p class="auth-footer-text left-align">
+                Already have an account? <span class="auth-link-text switch-to-login">Log In</span>
+            </p>
+
+            <button class="btn btn-auth">Sign Up</button>
+        </div>
+
+        <div class="modal-footer">
+            <p>By continuing, you agree to Dekenet Al Nas <span class="highlight">Conditions of Use</span> and <span class="highlight">Privacy Policy</span></p>
+        </div>
+    </div>
+</div>
+
+    <script src="home_script.js"></script>
+</body>
+</html>
